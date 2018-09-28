@@ -1,0 +1,450 @@
+/* start general */
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.clearfix {
+    clear: both
+}
+
+/* end general */
+
+/* start fixed nav */
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+    font-size: 24px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav span {
+    flex-basis: 500px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+nav span:hover {
+    color: #d4c3da
+}
+
+
+
+
+/* start fixed nav */
+
+/* start header*/
+
+header {
+    background: url(../images/slider.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 600px;
+    margin-top: 70px;
+
+}
+
+
+header .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(13, 12, 12, 0.5);
+}
+
+header .head-text {
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 400px;
+}
+
+header .head-text h2 {
+    font-size: 33px;
+    font-weight: 100;
+}
+
+header .head-text p {
+    font-size: 20px;
+}
+
+/* End header*/
+
+/* start collection */
+
+.collection {
+    padding-bottom: 25px;
+}
+
+.collection .collects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.collection .collects .collect {
+    background-color: #EEE;
+    text-align: center;
+}
+
+.collection h2 {
+    margin: 120px 0 35px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 100;
+}
+
+.collection p {
+
+    font-size: 19px;
+    width: 78%;
+    margin: 0 auto 50px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.collection h4 {
+    font-weight: 100;
+    font-size: 20px;
+    color: #8a5f5f
+}
+
+.collection .collect i {
+    font-size: 85px;
+    color: #192d38;
+    margin-top: 50px;
+}
+
+/* end collection */
+
+/* start our art*/
+
+.our-art {
+    min-height: 350px;
+    text-align: center;
+    background: url(../images/cta01.jpg);
+    background-size: cover;
+    position: relative;
+    color: #FFF;
+
+}
+
+
+.our-art .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(13, 12, 12, 0.3);
+}
+
+.our-art .Art-text {
+    padding: 1px 25px 55px;
+}
+
+.our-art .Art-text h2 {
+    font-size: 33px;
+    font-weight: 100;
+    margin-bottom: 46px;
+    margin-top: 55px;
+
+}
+
+.our-art .Art-text p {
+    font-size: 20px;
+    line-height: 1.6;
+
+}
+
+
+/* end our art*/
+
+/* start testmonial */
+
+.testimonial {
+    text-align: center;
+    min-height: 500px;
+    padding: 80px 25px 25px;
+
+}
+
+
+.testimonial .head-content h2 {
+    font-size: 33px;
+    font-weight: 100;
+    margin: 0 0 38px;
+}
+
+.testimonial .head-content p {
+
+    font-size: 20px;
+    margin-bottom: 50px;
+    width: 81%;
+    margin: 0 auto 40px;
+}
+
+.testimonial .items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    padding: 0 20px;
+}
+
+.testimonial .items > .item {
+    margin-left: 2%;
+    min-height: 335px;
+    background: #EEE;
+    position: relative;
+}
+
+.testimonial .items > .item > p {
+    width: 59%;
+    margin-left: 22%;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.testimonial .items > .item > span {
+    display: block;
+    background: red;
+    width: 6px;
+    height: 160px;
+    position: absolute;
+    top: 38px;
+    margin-left: 45px;
+}
+
+.testimonial .items > .item img {
+    width: 73px;
+    border-radius: 50%;
+    margin-left: 36px;
+    margin-top: 55px;
+}
+
+.testimonial .items > .item div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    align-items: end;
+    margin-bottom: 22px;
+}
+
+.testimonial .items > .item div > p {
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.testimonial .items > .item div > p span:first-child {
+    color: #ff1700;
+    margin-right: 5px;
+    font-family: cursive;
+    transition: all .4s linear;
+}
+
+.testimonial .items > .item div > p span:first-child:hover {
+
+    color: #170503;
+
+    font-size: 19px;
+
+}
+
+/* end testmonial */
+
+/* start footer */
+
+footer {
+    background: #101010;
+    min-height: 430px;
+    color: #FFF;
+    padding-top: 80px;
+    padding-bottom: 1px;
+}
+
+footer .splits {
+    display: grid;
+    grid-template-columns: 46% 26% 24%;
+}
+
+footer .splits > p {
+    text-align: center;
+    font-size: 19px;
+    margin-top: 35px;
+    color: #dac4d6f2;
+}
+
+footer > span {
+    height: 1px;
+    background-color: #908989;
+    display: block;
+    width: 94%;
+    margin: 24px auto;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 19px;
+    color: #b5aca8;
+    line-height: 45px;
+}
+
+
+footer .split h2 {
+    font-weight: 100;
+    color: #dac4d6f2;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+footer .split p {
+    font-size: 18px;
+    color: #b5adad;
+
+}
+
+footer .split:first-child {
+    margin-right: 14%;
+    margin-left: 8%;
+}
+
+footer .split:first-child p {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+footer .split:nth-child(2){margin-left: 24px}
+
+footer .split:nth-child(2) p {
+    padding-bottom: 15px;
+    border-bottom: 1.3px solid #8d8d8d;
+    padding-top: 7px;
+    width: 280px;
+}
+
+footer .split:nth-child(2) p a {
+    text-decoration: none;
+    color: #b5adad;
+}
+
+footer .split:nth-child(2) p a:hover {
+    transition: all .2s ease-in-out;
+    color: red;
+}
+
+footer .split:nth-child(3) {
+    margin-left: 70px;
+}
+
+footer .split:nth-child(3) .social {
+    padding-top: 4px;
+    height: 47px;
+    text-align: center;
+    display: flex;
+    line-height: 38px;
+}
+
+footer .split:nth-child(3) .social span {
+    font-size: 18px;
+    color: #b5adad;
+    margin-left: 18px;
+}
+
+footer .split:nth-child(3) .social span:hover {
+    transition: all .3s ease-in-out;
+    color: red;
+}
+
+footer .split:nth-child(3) .social i {
+    font-size: 40px;
+    color: #a7a1a1;
+}
+
+
+/* end footer */
+
+/* start media query */
+
+/* Portrait phones and smaller */
+
+@media (max-width: 680px) {
+    .collection .collects {
+        grid-template-columns: auto
+    }
+}
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 681px) and (max-width: 991px) {
+    .collection .collects {
+        grid-template-columns: auto auto
+    }
+}
+
+/*start testmonial */
+
+@media (max-width: 767px) {
+    .testimonial .items {
+        grid-template-columns: auto;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .testimonial .items {
+        grid-template-columns: auto auto;
+    }
+}
+
+
+/*end testmonial */
+
+/*start footer */
+
+@media (max-width:800px) {
+    footer .splits {
+        grid-template-columns: auto;
+    }
+
+    footer .splits .split {
+        margin-left: 8%;
+        margin-bottom: 30px
+    }
+
+}
+
+@media (min-width:801px) and (max-width:1200px) {
+    footer .splits {
+        grid-template-columns: 60% 40%;
+    }
+
+    footer .splits .split {
+        margin-left: 5%;
+        margin-bottom: 30px
+    }
+}
+
+
+
+/*end footer */
+
+/* end media query */
